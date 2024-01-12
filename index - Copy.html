@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just buy Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+            </div>
+            <div class="row">
+                <div class="col-2">
+
+                    <h1 class="hero-heading"> JUST BUY FASHION</h1>
+
+                    <p>Discover the Latest Trends in Fashion
+                    </p>
+                </div>
+                <div class="col-2">
+                    <img src="images/image1.png">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!------------------ featured categories --------------->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/category-1.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-2.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-3.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------- Our Featured Products -------------->
+
+
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+
+                <a href="product-details.html"><img src="images/gallery-1.jpg"></a>
+                <h4><a href="product-details.html">Blue Printed T-Shirt</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+                <button class="btn btn-sm" onclick="addToCart('gallery-1', 50.00)">Buy me</button>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg">
+                <h4>HRX Sports Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$75.00</p>
+                <button class="btn btn-sm" onclick="addToCart('product-2', 38.50)">Buy me</button>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg">
+                <h4>HRX Gray Trackpants</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$45.00</p>
+                <button class="btn btn-sm" onclick="addToCart('product-3', 38.50)">Buy me</button>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg">
+                <h4>Blue Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$55.00</p>
+                <button class="btn btn-sm" onclick="addToCart('product-4', 38.50)">Buy me</button>
+            </div>
+        </div>
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-5.jpg">
+                <h4>Puma Gray Sports Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$95.00</p>
+                <button class="btn btn-sm" onclick="addToCart('Product 5', 38.50)">Buy me</button>
+            </div>
+            <div class="col-4">
+                <img src="images/product-6.jpg">
+                <h4>Black Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$55.00</p>
+                <button class="btn btn-sm" onclick="addToCart('Product 6', 38.50)">Buy me</button>
+            </div>
+            <div class="col-4">
+                <img src="images/product-7.jpg">
+                <h4>HRX Set of 3 Socks</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$30.00</p>
+                <button class="btn btn-sm" onclick="addToCart('Product 7', 38.50)">Buy me</button>
+            </div>
+            <div class="col-4">
+                <img src="images/product-8.jpg">
+                <h4>Black Fossil Watch</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$120.00</p>
+                <button class="btn btn-sm" onclick="addToCart('Product 8', 38.50)">Buy me</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-9.jpg">
+                <h4>Black Sportx Watch</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$135.00</p>
+                <button class="btn btn-sm" onclick="addToCart('Product 9', 38.50)">Buy me</button>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg">
+                <h4>Black HRX Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$50.00</p>
+                <button class="btn btn-sm" onclick="addToCart('Product 10', 38.50)">Buy me</button>
+            </div>
+            <div class="col-4">
+                <img src="images/product-11.jpg">
+                <h4>Gray Nike Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$55.00</p>
+                <button class="btn btn-sm" onclick="addToCart('Product 1', 38.50)">Buy me</button>
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.jpg">
+                <h4>HRX Black Trackpants</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$75.00</p>
+                <button class="btn btn-sm" onclick="addToCart('Product 1', 38.50)">Buy me</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: $0.00</p>
+    </section>
+    </main>
+
+    <script src="script.js"></script>
+
+    <!----------offer--------------->
+
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/exclusive.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on store</p>
+                    <h1>Nike | Air Max Impact 4 Mens Basketball Shoes</h1>
+                    <small> The NIke Air Max Impact 4 Mens Basketball Shoes are perfect for hitting the court, crafted with a shaped ankle collar along with a padded tongue and a lace fastening that ensures a comfortable fit. A cushioned insole teamed with an an Air cushioning unit to the heel that provides a responsive feel, a moulded outsole coupled with rubber overlays to key areas provides fantastic traction right when its needed, finished off with the classic Nike Swoosh branding to the side. </small>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!----------Brands--------------->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/logo-godrej.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-oppo.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-coca-cola.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-paypal.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-philips.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------Footer--------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <img src="images/logo.png">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter
+                            <li>
+                                <li>Instagram</li>
+                                <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+
+
+
+        <script>
+            const cart = [];
+
+            function addToCart(productId, productName, price) {
+                const existingItem = cart.find(item => item.id === productId);
+
+                if (existingItem) {
+                    existingItem.quantity++;
+                } else {
+                    cart.push({
+                        id: productId,
+                        name: productName,
+                        price: price,
+                        quantity: 1
+                    });
+                }
+
+                updateCart();
+            }
+
+            function removeFromCart(productId) {
+                const index = cart.findIndex(item => item.id === productId);
+
+                if (index !== -1) {
+                    if (cart[index].quantity > 1) {
+                        cart[index].quantity--;
+                    } else {
+                        cart.splice(index, 1);
+                    }
+                    updateCart();
+                }
+            }
+
+            function updateCart() {
+                const cartItems = document.getElementById("cartItems");
+                cartItems.innerHTML = '';
+
+                let total = 0;
+
+                cart.forEach(item => {
+                    const li = document.createElement('li');
+                    const removeButton = document.createElement('button');
+                    removeButton.textContent = 'Remove';
+                    removeButton.className = 'remove';
+                    removeButton.onclick = () => removeFromCart(item.id);
+
+                    li.textContent = `${item.name} x${item.quantity} - $${(item.price * item.quantity).toFixed(2)}`;
+                    li.appendChild(removeButton);
+                    cartItems.appendChild(li);
+
+                    total += item.price * item.quantity;
+                });
+
+                const cartTotal = document.getElementById('cartTotal');
+                cartTotal.textContent = total.toFixed(2);
+            }
+
+            function checkout() {
+                // Implement checkout functionality, e.g., redirect to a checkout page
+                alert('Checkout is not implemented in this example.');
+            }
+        </script>
+
+
+</body>
+
+</html
